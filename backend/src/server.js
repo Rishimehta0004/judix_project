@@ -11,7 +11,7 @@ const userRoutes = require('./routes/userRoutes');
 const taskRoutes = require('./routes/taskRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 // Connect to MongoDB
 connectDB();
@@ -48,7 +48,7 @@ app.use((req, res) => {
 app.use(errorHandler);
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`📡 Environment: ${process.env.NODE_ENV || 'development'}`);
 });
