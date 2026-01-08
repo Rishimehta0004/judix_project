@@ -514,3 +514,4 @@ For issues or questions, please open an issue in the repository.
 ---
 
 **Built with ❤️ for Full-Stack Developer Intern Assignment**
+# judix_project
