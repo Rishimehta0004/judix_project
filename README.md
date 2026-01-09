@@ -2,7 +2,13 @@
 
 A modern, production-ready full-stack web application built with Next.js 14, Express.js, MongoDB, and featuring dual authentication (JWT + Google OAuth 2.0).
 
-## 🚀 Features
+## � Live Deployment
+
+- **Frontend:** https://69609682bf98967512bdb949--jovial-cannoli-ac9055.netlify.app
+- **Backend API:** https://judix-project.onrender.com
+- **GitHub Repository:** https://github.com/Rishimehta0004/judix_project
+
+## �🚀 Features
 
 ### Authentication & Security
 - **Email/Password Authentication** with JWT tokens
