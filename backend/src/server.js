@@ -13,9 +13,6 @@ const taskRoutes = require('./routes/taskRoutes');
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-// Connect to MongoDB
-connectDB();
-
 // Middleware
 app.use(helmet()); // Security headers
 app.use(cors({
@@ -47,10 +44,13 @@ app.use((req, res) => {
 // Error Handler (must be last)
 app.use(errorHandler);
 
-// Start server
+// Start server first, then connect to DB
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`📡 Environment: ${process.env.NODE_ENV || 'development'}`);
+  
+  // Connect to MongoDB after server is listening
+  connectDB();
 });
 
 module.exports = app;
